@@ -1,0 +1,99 @@
+﻿@model Skopje_charging_stations.Models.charging_station
+
+@{
+    ViewBag.Title = "Detali";
+}
+
+<h2>Detali</h2>
+
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Geografska dolzina
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitude)
+        </dd>
+
+        <dt>
+            Geografska sirina
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitude)
+        </dd>
+
+        <dt>
+            Obelezje
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amenity)
+        </dd>
+
+        <dt>
+            Cena
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fee)
+        </dd>
+
+        <dt>
+            Otvoreni casovi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.openingHours)
+        </dd>
+
+        <dt>
+            Operator
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.operatorCS)
+        </dd>
+
+        <dt>
+            Kilovati
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.socket)
+        </dd>
+
+        <dt>
+            Tip
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip)
+        </dd>
+
+        <dt>
+            Adresa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            Opstina
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.municipality)
+        </dd>
+
+    </dl>
+</div>
+<p>
+   
+        @Html.ActionLink("Nazad kon listata", "Index","cs",null,new { @class = "btn btn-primary" })
+   
+</p>

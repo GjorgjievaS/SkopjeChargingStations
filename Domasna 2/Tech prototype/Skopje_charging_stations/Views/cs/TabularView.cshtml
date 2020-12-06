@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Skopje_charging_stations.Models.charging_station>
+
+@{
+    ViewBag.Title = "Charging stations";
+}
+
+<h2>Charging stations</h2>
+
+
+<table class="table" id="table">
+    <thead>
+        <tr>
+
+            <th>
+                Municipality
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Operator
+            </th>
+            <th>
+                Type
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.municipality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.operatorCS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tip)
+                </td>
+
+
+                <td>
+                   
+                        @Html.ActionLink("Details", "Details", new { id = item.id }, new { @class = "btn btn-primary" })
+                   
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts{
+    <script>
+
+            $("#table").DataTable();
+
+    </script>
+}

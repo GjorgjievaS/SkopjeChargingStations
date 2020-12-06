@@ -1,0 +1,98 @@
+﻿@model Skopje_charging_stations.Models.charging_station
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Longitude
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitude)
+        </dd>
+
+        <dt>
+            Latitude
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitude)
+        </dd>
+
+        <dt>
+            Amenity
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amenity)
+        </dd>
+
+        <dt>
+            Fee
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fee)
+        </dd>
+
+        <dt>
+            Opening hours
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.openingHours)
+        </dd>
+
+        <dt>
+            Operator
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.operatorCS)
+        </dd>
+
+        <dt>
+            Socket
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.socket)
+        </dd>
+
+        <dt>
+           Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip)
+        </dd>
+
+        <dt>
+            Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+             Municipality
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.municipality)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "TabularView", "cs",null,new { @class = "btn btn-primary" })
+
+</p>

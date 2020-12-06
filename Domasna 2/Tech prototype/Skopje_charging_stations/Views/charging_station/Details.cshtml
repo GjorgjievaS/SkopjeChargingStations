@@ -1,0 +1,98 @@
+﻿@model Skopje_charging_stations.Models.charging_station
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>charging_station</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amenity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amenity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.openingHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.openingHours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.operatorCS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.operatorCS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.socket)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.socket)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.municipality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.municipality)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
