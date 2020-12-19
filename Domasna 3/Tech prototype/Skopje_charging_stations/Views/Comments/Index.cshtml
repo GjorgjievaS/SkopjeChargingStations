@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Skopje_charging_stations.Models.Comments>
+
+@{
+    ViewBag.Title = "Komentari";
+}
+
+<h2>Komentari</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.comment)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.comment)
+        </td>
+        
+    </tr>
+}
+
+</table>
