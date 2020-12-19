@@ -7,6 +7,12 @@ namespace Skopje_charging_stations.Models
 {
     public class IndexViewModel
     {
+        public string Email { get; set; }
+        public string UserName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string markaVozilo { get; set; }
+        public string modelVozilol { get; set; }
         public bool HasPassword { get; set; }
         public IList<UserLoginInfo> Logins { get; set; }
         public string PhoneNumber { get; set; }
@@ -83,4 +89,21 @@ namespace Skopje_charging_stations.Models
         public string SelectedProvider { get; set; }
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
     }
+    public class ChangeFirstNameViewModel
+    {
+        public string FirstName { get; set; }
+    }
+    public class ChangeLastNameViewModel
+    {
+        public string LastName { get; set; }
+    }
+    public class ChangeMarkaVoziloViewModel
+    {
+        public string markaVozilo { get; set; }
+    }
+    public class ChangeModelVoziloViewModel
+    {
+        public string modelVozilo { get; set; }
+    }
+   
 }

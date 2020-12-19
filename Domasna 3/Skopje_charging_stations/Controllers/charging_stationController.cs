@@ -10,6 +10,7 @@ using Skopje_charging_stations.Models;
 
 namespace Skopje_charging_stations.Controllers
 {
+    [Authorize]
     public class charging_stationController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

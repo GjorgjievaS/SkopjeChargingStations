@@ -56,6 +56,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -190,6 +192,22 @@
     <Compile Include="Migrations\202012191341069_addedUsername.cs" />
     <Compile Include="Migrations\202012191341069_addedUsername.designer.cs">
       <DependentUpon>202012191341069_addedUsername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012191739076_changedMVM.cs" />
+    <Compile Include="Migrations\202012191739076_changedMVM.designer.cs">
+      <DependentUpon>202012191739076_changedMVM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012191818509_addEditButton.cs" />
+    <Compile Include="Migrations\202012191818509_addEditButton.designer.cs">
+      <DependentUpon>202012191818509_addEditButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012191921117_changedModel.cs" />
+    <Compile Include="Migrations\202012191921117_changedModel.designer.cs">
+      <DependentUpon>202012191921117_changedModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012191928003_changeModel.cs" />
+    <Compile Include="Migrations\202012191928003_changeModel.designer.cs">
+      <DependentUpon>202012191928003_changeModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -501,6 +519,10 @@
     <Content Include="Views\charging_station\Detali.cshtml" />
     <Content Include="Views\charging_station\TabularView.cshtml" />
     <Content Include="Views\charging_station\Map.cshtml" />
+    <Content Include="Views\Manage\ChangeFirstName.cshtml" />
+    <Content Include="Views\Manage\ChangeLastName.cshtml" />
+    <Content Include="Views\Manage\ChangeMarkaVozilo.cshtml" />
+    <Content Include="Views\Manage\ChangeModelVozilo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -531,6 +553,21 @@
     <EmbeddedResource Include="Migrations\202012191341069_addedUsername.resx">
       <DependentUpon>202012191341069_addedUsername.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012191739076_changedMVM.resx">
+      <DependentUpon>202012191739076_changedMVM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012191818509_addEditButton.resx">
+      <DependentUpon>202012191818509_addEditButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012191921117_changedModel.resx">
+      <DependentUpon>202012191921117_changedModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012191928003_changeModel.resx">
+      <DependentUpon>202012191928003_changeModel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

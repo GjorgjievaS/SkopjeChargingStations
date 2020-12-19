@@ -1,0 +1,16 @@
+﻿@model Skopje_charging_stations.Models.ChangeMarkaVoziloViewModel
+@{
+    ViewBag.Title = "Promeni Marka na vozilo";
+}
+
+<h2>Promeni marka na vozilo</h2>
+
+@using (Html.BeginForm("ChangeMarkaVozilo", "Manage"))
+{
+    <div class="form-group">
+        <label>Marka na vozilo</label>
+        @Html.TextBoxFor(m => m.markaVozilo, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Promeni</button>
+}
