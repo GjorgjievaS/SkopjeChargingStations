@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -13,6 +14,7 @@ namespace Skopje_charging_stations.Controllers
     [Authorize]
     public class ManageController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -64,8 +66,20 @@ namespace Skopje_charging_stations.Controllers
                 : "";
 
             var userId = User.Identity.GetUserId();
+            string Email = UserManager.FindById(userId).Email;
+            string UserName = UserManager.FindById(userId).UserName;
+            string FirstName = UserManager.FindById(userId).FirstName;
+            string LastName = UserManager.FindById(userId).LastName;
+            string markaVozilo = UserManager.FindById(userId).markaVozilo;
+            string modelVozilo = UserManager.FindById(userId).modelVozilo;
             var model = new IndexViewModel
             {
+                Email=Email,
+                UserName=UserName,
+                FirstName = FirstName,
+                LastName = LastName,
+                markaVozilo=markaVozilo,
+                modelVozilol=modelVozilo,
                 HasPassword = HasPassword(),
                 PhoneNumber = await UserManager.GetPhoneNumberAsync(userId),
                 TwoFactor = await UserManager.GetTwoFactorEnabledAsync(userId),
@@ -98,8 +112,7 @@ namespace Skopje_charging_stations.Controllers
             }
             return RedirectToAction("ManageLogins", new { Message = message });
         }
-
-        //
+       
         // GET: /Manage/AddPhoneNumber
         public ActionResult AddPhoneNumber()
         {
@@ -243,7 +256,94 @@ namespace Skopje_charging_stations.Controllers
             AddErrors(result);
             return View(model);
         }
+        public ActionResult ChangeFirstName()
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            ChangeFirstNameViewModel model = new ChangeFirstNameViewModel();
+            model.FirstName = user.FirstName;
+            return View(model);
+        }
 
+        [HttpPost]
+        public ActionResult ChangeFirstName(ChangeFirstNameViewModel model)
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            user.FirstName = model.FirstName;
+            UserManager.Update(user);
+            return RedirectToAction("Index");
+        }
+        public ActionResult ChangeLastName()
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            ChangeLastNameViewModel model = new ChangeLastNameViewModel();
+            model.LastName = user.LastName;
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult ChangeLastName(ChangeLastNameViewModel model)
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            user.LastName = model.LastName;
+            UserManager.Update(user);
+            return RedirectToAction("Index");
+        }
+        public ActionResult ChangeMarkaVozilo()
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            ChangeMarkaVoziloViewModel model = new ChangeMarkaVoziloViewModel();
+            model.markaVozilo = user.markaVozilo;
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult ChangeMarkaVozilo(ChangeMarkaVoziloViewModel model)
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            user.markaVozilo = model.markaVozilo;
+            UserManager.Update(user);
+            return RedirectToAction("Index");
+        }
+        public ActionResult ChangeModelVozilo()
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            ChangeModelVoziloViewModel model = new ChangeModelVoziloViewModel();
+            model.modelVozilo = user.modelVozilo;
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult ChangeModelVozilo(ChangeModelVoziloViewModel model)
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            user.modelVozilo = model.modelVozilo;
+            UserManager.Update(user);
+            return RedirectToAction("Index");
+        }
+        public ActionResult Delete(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            ApplicationUser au = db.Users.Find(id);
+            if (au == null)
+            {
+                return HttpNotFound();
+            }
+            return View(au);
+        }
+
+        // POST: Stores/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(string id)
+        {
+            ApplicationUser au = db.Users.Find(id);
+            db.Users.Remove(au);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
         //
         // GET: /Manage/SetPassword
         public ActionResult SetPassword()
@@ -386,4 +486,5 @@ namespace Skopje_charging_stations.Controllers
 
 #endregion
     }
+
 }
