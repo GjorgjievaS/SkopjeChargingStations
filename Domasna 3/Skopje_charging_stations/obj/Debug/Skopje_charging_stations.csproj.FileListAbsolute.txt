@@ -565,3 +565,5 @@ F:\SkopjeChargingStations\SkopjeChargingStations\Domasna 2\Tech prototype\Skopje
 F:\SkopjeChargingStations\SkopjeChargingStations\Domasna 2\Tech prototype\Skopje_charging_stations\obj\Debug\Skopje_charging_stations.csproj.GenerateResource.cache
 F:\SkopjeChargingStations\SkopjeChargingStations\Domasna 2\Tech prototype\Skopje_charging_stations\obj\Debug\Skopje_charging_stations.Migrations.initial.resources
 F:\SkopjeChargingStations\SkopjeChargingStations\Domasna 2\Tech prototype\Skopje_charging_stations\obj\Debug\Skopje_charging_stations.Migrations.initial1.resources
+F:\SkopjeChargingStations\SkopjeChargingStations\Domasna 2\Tech prototype\Skopje_charging_stations\obj\Debug\Skopje_charging_stations.Migrations.initial2.resources
+F:\SkopjeChargingStations\SkopjeChargingStations\Domasna 2\Tech prototype\Skopje_charging_stations\obj\Debug\Skopje_charging_stations.Migrations.addedUsername.resources
