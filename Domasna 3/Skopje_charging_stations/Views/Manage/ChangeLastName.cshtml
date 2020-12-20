@@ -1,0 +1,16 @@
+﻿@model Skopje_charging_stations.Models.ChangeLastNameViewModel
+@{
+    ViewBag.Title = "Promeni Prezime";
+}
+
+<h2>Promeni prezime</h2>
+
+@using (Html.BeginForm("ChangeLastName", "Manage"))
+{
+    <div class="form-group">
+        <label>Prezime</label>
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Promeni</button>
+}
