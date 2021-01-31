@@ -1,0 +1,102 @@
+﻿@model Demo.Models.Charging_station
+
+@{
+    ViewData["Title"] = "Detali";
+}
+
+
+<h1>Detali</h1>
+
+<div>
+    <h4>Stanica za polnenje na elektricni avtomobili</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Geografska dolzina
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.longitude)
+        </dd>
+        <dt class="col-sm-2">
+            Geografska sirina
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.latitude)
+        </dd>
+        <dt class="col-sm-2">
+            Obelezje
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.amenity)
+        </dd>
+        <dt class="col-sm-2">
+            Cena
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.fee)
+        </dd>
+        <dt class="col-sm-2">
+            Rabotni casovi
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.openingHours)
+        </dd>
+        <dt class="col-sm-2">
+            Operator
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.operatorCS)
+        </dd>
+        <dt class="col-sm-2">
+            Kilovati
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.socket)
+        </dd>
+        <dt class="col-sm-2">
+            Tip
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.tip)
+        </dd>
+        <dt class="col-sm-2">
+            Adresa
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.address)
+        </dd>
+        <dt class="col-sm-2">
+            Opstina
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.municipality)
+        </dd>
+
+
+    </dl>
+</div>
+<div id="map"></div>
+<script>
+
+            var map = L.map('map').setView([41.9981, 21.4254], 12);
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox/streets-v11',
+                tileSize: 512,
+                zoomOffset: -1,
+                accessToken: 'pk.eyJ1IjoiaWxpZXZhbCIsImEiOiJja2k4czcycHowOG94MnVsN2ZtbjJhZmEyIn0.a-nzOpBta_EYzu1CW8DXmg'
+            }).addTo(map);
+
+            @{
+                var lat = Model.latitude;
+                var lon = Model.longitude;
+                }
+                var marker = L.marker([@lat, @lon]).addTo(map);
+
+</script>
+<div>
+
+    <a asp-action="Tabelaren_prikaz" class="btn btn-primary">Nazad kon listata</a>
+</div>
+
