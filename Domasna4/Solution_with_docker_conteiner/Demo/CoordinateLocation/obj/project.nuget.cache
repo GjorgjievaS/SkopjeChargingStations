@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cu/aj0VTtlPKQXzFLmSa1gJnS+rNQ0QjEPWEB3U3lBzLXT8MP9og4l6jrd1nJ7yz0DE6+p0Y3kseq6Cj68zhpw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Blagica\\Desktop\\New folder\\SkopjeChargingStations\\Domasna4\\Demo\\CoordinateLocation\\CoordinateLocation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Blagica\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\Blagica\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,44 @@
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.exe
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.deps.json
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.runtimeconfig.json
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.runtimeconfig.dev.json
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.dll
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.pdb
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.csprojAssemblyReference.cache
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.AssemblyInfoInputs.cache
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.AssemblyInfo.cs
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.csproj.CoreCompileInputs.cache
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\staticwebassets\CoordinateLocation.StaticWebAssets.Manifest.cache
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\staticwebassets\CoordinateLocation.StaticWebAssets.xml
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\scopedcss\bundle\CoordinateLocation.styles.css
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.RazorTargetAssemblyInfo.cache
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.csproj.CopyComplete
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.dll
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.pdb
+C:\Users\Blagica\source\repos\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.genruntimeconfig.cache
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.exe
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.deps.json
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.runtimeconfig.json
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.runtimeconfig.dev.json
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.dll
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\CoordinateLocation.pdb
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.csprojAssemblyReference.cache
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.AssemblyInfoInputs.cache
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.AssemblyInfo.cs
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.csproj.CoreCompileInputs.cache
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\staticwebassets\CoordinateLocation.StaticWebAssets.Manifest.cache
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\staticwebassets\CoordinateLocation.StaticWebAssets.xml
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\scopedcss\bundle\CoordinateLocation.styles.css
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.RazorTargetAssemblyInfo.cache
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.csproj.CopyComplete
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.dll
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.pdb
+C:\Users\Blagica\Desktop\New folder\SkopjeChargingStations\Domasna4\Demo\CoordinateLocation\obj\Debug\netcoreapp3.1\CoordinateLocation.genruntimeconfig.cache

@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  demo:
+    image: ${DOCKER_REGISTRY-}demo
+    ports:
+     - 49209:443
+    build:
+      context: .
+      dockerfile: Demo/Dockerfile
+    networks:
+      - my-network  
+    environment:
+     - API_URL=coordinatelocation:80
+
+  coordinatelocation:
+    image: ${DOCKER_REGISTRY-}coordinatelocation
+    ports:
+     - 49220:80
+    build:
+      context: .
+      dockerfile: CoordinateLocation/Dockerfile
+
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    name: my-network
+    external: true
+    driver: bridge

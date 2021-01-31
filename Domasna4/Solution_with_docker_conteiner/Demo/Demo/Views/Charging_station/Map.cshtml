@@ -1,0 +1,49 @@
+﻿@model Demo.Models.Kordinati
+@{
+    ViewData["Title"] = "Map";
+}
+<h2>Map/Mapa</h2>
+<p>The green marker is showing your location.<br/>
+    Zeleniot marker ja pokazuva vasata lokacija.</p>
+
+<div id="map">
+
+</div>
+<style>
+    #map {
+        height: 360px;
+    }
+</style>
+
+<script>
+    var map = L.map('map').setView([41.9981, 21.4254], 12);
+    var greenIcon = new L.Icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoiaWxpZXZhbCIsImEiOiJja2k4czcycHowOG94MnVsN2ZtbjJhZmEyIn0.a-nzOpBta_EYzu1CW8DXmg'
+    }).addTo(map);
+    L.marker([41.99213, 21.4275923]).addTo(map);
+    L.marker([41.9867146, 21.465178]).addTo(map);
+    L.marker([41.9948629, 21.4322161]).addTo(map);
+    L.marker([42.005371, 21.4180965]).addTo(map);
+    L.marker([42.0136336, 21.4035307]).addTo(map);
+    L.marker([42.0061889, 21.4269103]).addTo(map);
+    L.marker([42.0091302, 21.3632349]).addTo(map);
+    L.marker([42.0067912, 21.3724961]).addTo(map);
+    L.marker([41.9947319, 21.41197]).addTo(map);
+    L.marker([42.0048405, 21.4192586]).addTo(map);
+    L.marker([41.9887319, 21.4775368]).addTo(map);
+    L.marker([42.0070408, 21.4870891]).addTo(map);
+    L.marker([@Model.latitude, @Model.logitude], { icon: greenIcon }).addTo(map);
+</script>

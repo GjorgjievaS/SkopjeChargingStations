@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Demo.Models.Charging_station>
+
+@{
+    ViewData["Title"] = "Tabular view";
+}
+
+<h2>Stations for charging electric vehicles</h2>
+
+<table class="table" id="chargingTable">
+    <thead>
+        <tr>
+            <th>
+                Municipality
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Operator
+            </th>
+            <th>
+                Type
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.municipality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.operatorCS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tip)
+                </td>
+                <td>
+
+                    <a asp-action="Details" asp-route-id="@item.id" class="btn btn-primary">Details</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script src="~/lib/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script>
+        $("#chargingTable").DataTable();
+    </script>
+}
