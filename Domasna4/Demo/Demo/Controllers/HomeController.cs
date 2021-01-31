@@ -17,13 +17,13 @@ namespace Demo.Controllers
         {
             _logger = logger;
         }
-
+        //This action is index action of Home controller. It's showing our home page
         public IActionResult Index()
         {
             return View();
         }
 
-
+        //This action is error page of our Home Controller
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

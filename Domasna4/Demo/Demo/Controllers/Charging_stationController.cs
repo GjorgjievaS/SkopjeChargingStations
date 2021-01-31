@@ -9,9 +9,11 @@ using Demo.Data;
 using Demo.Models;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Demo.Controllers
 {
+    [Authorize]
     public class Charging_stationController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -21,15 +23,19 @@ namespace Demo.Controllers
             _context = context;
         }
 
+        //This action is returning the index view of the Charging_station controller. 
+        //The index view is showing the list of all charging stations in Skopje.
+        //This view is in English language.
         // GET: Charging_station
         public async Task<IActionResult> Index()
         {
             return View(await _context.Charging_station.ToListAsync());
         }
 
+
         public async Task<IActionResult> MapAsync()
         {
-            String microServiceURI = "https://localhost:44350/";
+            String microServiceURI = "https://localhost:44350";
 
             var client = new HttpClient();
 
@@ -55,12 +61,19 @@ namespace Demo.Controllers
             return View(kordinati);
         }
 
+        //This action is returning the index view of the Charging_station controller. 
+        //The index view is showing the list of all charging stations in Skopje.
+        //This view is in Macedonian language.
+        // GET: Charging_station/Tabelaren_prikaz
         public async Task<IActionResult> Tabelaren_prikaz()
         {
             return View(await _context.Charging_station.ToListAsync());
         }
 
         // GET: Charging_station/Details/5
+        //This action is returning the details view of the Charging_station controller. 
+        //The details view is showing the details for a selected charging station in Skopje.
+        //This view is in English language.
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -78,7 +91,10 @@ namespace Demo.Controllers
             return View(charging_station);
         }
 
-
+        // GET: Charging_station/Detali/5
+        //This action is returning the details view of the Charging_station controller. 
+        //The details view is showing the details for a selected charging station in Skopje.
+        //This view is in Macedonian language.
         public async Task<IActionResult> Detali(int? id)
         {
             if (id == null)

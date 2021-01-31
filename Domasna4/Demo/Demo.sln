@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{682B5A08-7256-4064-8015-7A8834DFC442}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D1711E0F-008C-4251-BD1F-44F4A24C1260} = {D1711E0F-008C-4251-BD1F-44F4A24C1260}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinateLocation", "CoordinateLocation\CoordinateLocation.csproj", "{D1711E0F-008C-4251-BD1F-44F4A24C1260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoordinateLocation", "CoordinateLocation\CoordinateLocation.csproj", "{D1711E0F-008C-4251-BD1F-44F4A24C1260}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
